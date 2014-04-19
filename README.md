@@ -225,3 +225,8 @@ To make this awesome service available I need to say thank you to the Google+ Co
 +Lucas Gagneten (Spanish)<br>
 +Martin Evans (English translation + Spanish)<br>
 +Thomas Le Pew (English translation help)
+
+
+Privacy
+========
+We try to protect your privacy with this service. But as always, we can't guarantee it. But this service will be always better than directly access to the NotificationListenerService and AccessibilityService. Think about it. 
