@@ -232,7 +232,8 @@ To make this awesome service available I need to say thank you to the Google+ Co
 +Roberto Darko (Italy translation)<br>
 +Lucas Gagneten (Spanish translation)<br>
 +Martin Evans (English translation + Spanish)<br>
-+Thomas Le Pew (English translation help)
++Thomas Le Pew (English translation help)<br>
++Daniel Guta (Romanian translation)
 
 
 Privacy
