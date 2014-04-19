@@ -37,13 +37,6 @@ Context Information
 <b>Fragment:</b> You should define "<i>Context myFragmentContext = container.getContext();</i>" in onCreateView
 
 
-Permission needed
-========
-```javascript
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-```
-
-
 Functions
 ========
 ```javascript
@@ -82,6 +75,14 @@ NotifySC.SCShowDialog(getBaseContext());
 ```
 
 &#42;&#42;&#42; = These functions are only working when the NotifySC service is running!
+
+
+Permission required
+========
+This is needed to get the registration-status.
+```javascript
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+```
 
 
 Example (Settings Activity)
