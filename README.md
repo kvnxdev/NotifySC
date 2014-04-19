@@ -222,7 +222,7 @@ To make this awesome service available I need to say thank you to the Google+ Co
 +Lucas Benninger (English translation help)<br>
 +Ergina Syrigou (Greek translation)<br>
 +Roberto Darko (Italy translation)<br>
-+Lucas Gagneten (Spanish)<br>
++Lucas Gagneten (Spanish translation)<br>
 +Martin Evans (English translation + Spanish)<br>
 +Thomas Le Pew (English translation help)
 
