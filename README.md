@@ -86,7 +86,7 @@ Create the setup function. This is just an example. You can use it in so much wa
 public void setupNotifySC()
 {
   int notifySCStatus= NotifySC.SCChecker(getBaseContext());
-  switch(position)
+  switch(notifySCStatus)
   {
     case 0:
         //The user need to install NotifySC first (Display a dialog?)
