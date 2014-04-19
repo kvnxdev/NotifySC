@@ -1,8 +1,11 @@
-// IMPORTANT: Here you must define your packagename, else everything is red with errors.
+// IMPORTANT: Here you must define your packagename.
 // package com.my.package.name;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.List;
+
+import android.accessibilityservice.AccessibilityServiceInfo;
 import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -12,6 +15,8 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.Settings;
+import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityManager;
 
 public class NotifySC {
 	
@@ -105,7 +110,7 @@ public class NotifySC {
             app_installed = true;
         }
         catch (PackageManager.NameNotFoundException e) 
-        {
+        { 
             app_installed = false;
         }
         return app_installed ;
@@ -119,7 +124,7 @@ public class NotifySC {
     	String packageName = "com.notify.sc";
     	boolean notificationAccess = false;
     	
-    	if (enabledNotificationListeners == null || !enabledNotificationListeners.contains(packageName))
+    	if ((enabledNotificationListeners == null || !enabledNotificationListeners.contains(packageName)) && isAccessibilityEnabled(context)==false)
     	{
     		notificationAccess=false;
     	}
@@ -128,6 +133,23 @@ public class NotifySC {
     		notificationAccess=true;
     	}
     	return notificationAccess;
+    }
+    
+    public static boolean isAccessibilityEnabled(Context context) 
+    {
+    	//Checks for older devices the access to AccessibilityService instead of NotificationListenerService
+    	String packageName = "com.notify.sc/.NotificationWatchdogA";
+        AccessibilityManager am = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
+        List<AccessibilityServiceInfo> runningServices = am.getEnabledAccessibilityServiceList(AccessibilityEvent.TYPES_ALL_MASK);
+        for (AccessibilityServiceInfo service : runningServices) 
+        {
+            if (packageName.equals(service.getId())) 
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 	
     public static int SCChecker(Context context)
