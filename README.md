@@ -1,7 +1,7 @@
 Introduction
 ========
 Hey developer, hey user.
-With NotifySC it is much easier to work with notifications in android. I attached the sourcecode and an example to check out. I will explain below what it is, how to use it and why you should use it.
+With NotifySC it is much easier to work with notifications in android. I attached the sourcecode, class and an example to check out. I will explain below what it is, how to use it and why you should use it.
 
 
 
