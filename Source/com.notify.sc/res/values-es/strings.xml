@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NotifySC</string>
+    <string name="action_devpage">KvnX Dev</string>
+    <string name="action_devsheet">Developer Sheet</string>
+    <string name="appreg_notification_1">La aplicacion</string>
+    <string name="appreg_notification_2"> a sido registrada!</string>
+    <string name="appunreg_notification_1">El registro a </string>
+    <string name="appunreg_notification_2"> sido anulado!</string>
+    <string name="info_noregapps">No aplicaciones registradas se encontraron!</string>
+    
+    <string name="tos_text"><![CDATA[Esta aplicacion es la mejor solucion para los usarios y el programador para trabajar con notificaciones.<br></br><br></br>tiene que aceptar, que  NotifySC tenga permitido mandar una notificacion contenido a cada aplicacion registrada (Se pueden anular registros en cual quien momento!). <br></br><br></br>NotifySC se <b>no</b> cargara, salvar o entrar cualquier informacion de notificacion.]]></string>
+    
+    <string name="dialog_accept">ACEPTAR</string>
+    <string name="dialog_cancel">CANCELAR</string>
+    <string name="dialog_yes">SI</string>
+    <string name="dialog_no">NO</string>
+    <string name="dialog_title_revoke">Anular Registro?</string>
+    <string name="dialog_title_registrated">Aplicacion Registrada</string>
+    
+    <string name="revoke_text">Desea anular el registro de la aplicacion que escogio? \n\nADVERTENCIA: Despues de aceptar no recbira notificaciones nuevamente!</string>
+    
+    <string name="start_service">EMPEZAR EL SERVICIO</string>
+    <string name="stop_service">PARAR EL SERVICIO</string>
+    <string name="started">Empezar</string>
+    <string name="stopped">Parar</string>
+    <string name="notificationlistener">Notificacion Escuchar</string>
+</resources>

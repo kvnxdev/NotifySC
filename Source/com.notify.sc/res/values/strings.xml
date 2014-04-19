@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NotifySC</string>
+    <string name="action_devpage">KvnX Dev</string>
+    <string name="action_devsheet">Developer Sheet</string>
+    <string name="appreg_notification_1">The app </string>
+    <string name="appreg_notification_2"> has been registered!</string>
+    <string name="appunreg_notification_1">The registration of </string>
+    <string name="appunreg_notification_2"> the app has been revoked!</string>
+    <string name="info_noregapps">No registered apps found!</string>
+    
+    <string name="tos_text"><![CDATA[This app is the best solution for users and developers to work with notifications.<br></br><br></br>You need to accept that NotifySC is allowed to send notification content to every registered app (You can revoke registrations at any time!). <br></br><br></br>NotifySC will <b>not</b> upload, save or log any notification data.]]></string>
+    
+    <string name="dialog_accept">ACCEPT</string>
+    <string name="dialog_cancel">CANCEL</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">NO</string>
+    <string name="dialog_title_revoke">Revoke Registration?</string>
+    <string name="dialog_title_registrated">Registered Apps</string>
+    
+    <string name="revoke_text">Do you want to revoke the registration for the chosen app? \n\nWARNING: After doing this the chosen app will not be able to receive notifications anymore!</string>
+    
+    <string name="start_service">START SERVICE</string>
+    <string name="stop_service">STOP SERVICE</string>
+    <string name="started">Started</string>
+    <string name="stopped">Stopped</string>
+    <string name="notificationlistener">Notification Listening </string>
+</resources>

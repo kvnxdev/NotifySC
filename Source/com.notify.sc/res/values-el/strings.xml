@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">NotifySC</string>
+	<string name="action_devpage">KvnX Dev</string>
+	<string name="action_devsheet">Φύλλο Προγραμματιστή</string>
+	<string name="appreg_notification_1">Η εφαρμογή </string>
+	<string name="appreg_notification_2">έχει εγγραφεί! </string>
+	<string name="appunreg_notification_1">Η εγγραφή αυτής της </string>
+	<string name="appunreg_notification_2"> έχει ανακληθεί! </string>
+	<string name="info_noregapps">Δεν βρέθηκαν εγγεγραμμένες εφαρμογές! </string>
+	
+	<string name="tos_text"><![CDATA[Αυτή η εφαρμογή είναι η καλύτερη λύση για χρήστες και προγραμματιστές για να δουλέψουν με τις ειδοποιήσεις.<br></br><br></br>Χρειάζεται να δεχθείτε ότι το NotifySC επιτρέπεται να αποστέλλει ειδοποίηση-περιεχόμενο σε κάθε εγγεγραμμένη εφαρμογή (μπορείτε να ανακαλέσετε τις καταχωρήσεις όποτε θέλετε!). <br></br><br></br>Το NotifySC θα <b>not</b> ανεβάσει ή αποθηκεύσει οποιαδήποτε δεδομένα ειδοποιήσεων.]]></string>
+	
+	<string name="dialog_accept">ΑΠΟΔΟΧΗ</string>
+	<string name="dialog_cancel">ΑΚΥΡΟ</string>
+	<string name="dialog_yes">ΝΑΙ</string>
+	<string name="dialog_no">ΟΧΙ</string>
+	<string name="dialog_title_revoke"> Ανακάλεση εγγραφής? </string>
+	<string name="dialog_title_registrated">Εγγεγραμμένες Εφαρμογές</string>
+	
+	<string name="revoke_text">Θέλετε να ανακαλέσετε την εγγραφή της επιλεγμένης εφαρμογής ? \n\nΠΡΟΣΟΧΗ: Μετά από αυτό η επιλεγμένη εφαρμογή δεν θα δέχεται ειδοποιήσεις πια! </string>
+ 	
+ 	<string name="start_service">ΕΝΑΡΞΗ ΥΠΗΡΕΣΙΑΣ</string>
+ 	<string name="stop_service">ΠΑΥΣΗ ΥΠΗΡΕΣΙΑΣ</string>
+ 	<string name="started">Άρχισε</string>
+ 	<string name="stopped">Σταμάτησε</string>
+ 	<string name="notificationlistener">NotificationListener</string>
+</resources>

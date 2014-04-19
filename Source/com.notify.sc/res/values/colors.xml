@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="trans">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightwhite">#77ffffff</color>
+    <color name="lightwhite2">#44ffffff</color>
+    <color name="actionbarcolor">#333333</color>
+</resources>

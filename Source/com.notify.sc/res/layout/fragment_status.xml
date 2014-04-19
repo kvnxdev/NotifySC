@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.notify.sc.StatusActivity$MainFragment" >
+
+
+    <LinearLayout
+        android:id="@+id/informationContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/statusList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+        	android:background="#cccccc" 
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/itemService"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_item_overview_selector"
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:weightSum="6" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/notificationlistener"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center|right"
+                        android:text="Stopped"
+                        android:textColor="#A05959"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/itemReg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/list_item_overview_selector"
+                android:clickable="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:weightSum="6" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/dialog_title_registrated"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textViewAppCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="sans-serif-condensed"
+                        android:gravity="center|right"
+                        android:text="0"
+                        android:textColor="#587F9E"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="6dp"
+	        android:background="#ffffff" /> 
+	</LinearLayout>
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D19696" 
+        android:gravity="center"
+       	android:layout_below="@+id/informationContent"
+        android:id="@+id/notificationAccessWarning">
+
+		<Button
+		    android:id="@+id/settingsOpenNotificationAccess"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="24dp"
+		    android:paddingRight="24dp"
+		    android:paddingTop="12dp"
+		    android:paddingBottom="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:background="@drawable/list_item_overview_selector"
+		    android:text="@string/start_service" />
+        
+    </RelativeLayout>
+
+
+</RelativeLayout>
