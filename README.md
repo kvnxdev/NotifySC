@@ -12,7 +12,7 @@ NotifySC is the best solution for users and developer to work with notifications
 
 Download & Install
 ========
-1. Download the NotifySC.class in the folder "NotifySC Class".
+1. Download the NotifySC.java in the folder "Class".
 2. Drag and drop the class in your package in Eclipse/Android Studio where your main classes are (E.g. com.test.app)
 3. You are ready! Easy, isn't it?
 
