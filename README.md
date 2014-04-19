@@ -109,7 +109,7 @@ public void onCreate(Bundle savedInstanceState)
 Example (Notification Acitvity)
 ========
 - <b>STEP 1 // DEFINE BROADCASTRECEIVER</b><br>
-You need to define a broadcastreceiver to receive notifications
+You need to define a broadcastreceiver to receive notifications.
 
 ```javascript
 SCNnotificationReceiver SCIncome;
@@ -117,7 +117,7 @@ SCNnotificationReceiver SCIncome;
 
 
 - <b>STEP 2 // CREATE BROADCASTRECEIVER</b><br>
-Setup and Create the broadcastreceiver to receive notifications
+Setup and Create the broadcastreceiver to receive notifications.
 
 ```javascript
 //The BroadcastReceiver Setup
@@ -173,7 +173,7 @@ public class SCNnotificationReceiver extends BroadcastReceiver
 
 
 - <b>STEP 3 // CANCEL/START BROADCASTRECEIVER</b><br>
-Create the broadcastreceiver to receive notifications
+Create the broadcastreceiver to receive notifications.
 
 ```javascript
 //You need to decide if you want to unregister it on onDestroy/onPause
@@ -190,3 +190,25 @@ public void onCreate(Bundle savedInstanceState)
   setupSCListener();
 }
 ```
+
+About
+========
+<b>Usage</b><br>
+This code is owned and written by KvnX Dev. Feel free to take a look on the sourcecode, but dont steal or copy it. Instead use it as inspiration maybe?<br>
+
+<b>Links</b><br>
+My E-Mail: kvnx1337@googlemail.com<br>
+My Google+: https://plus.google.com/+KevinNivek/posts<br>
+My Apps: https://play.google.com/store/apps/developer?id=KvnX+Dev<br>
+Link to App: https://play.google.com/store/apps/details?id=com.notify.sc<br>
+
+<b>Thanks</b><br>
+To make this awesome service available I need to say thank you to the Google+ Community "Knock²+ V3 // Beta Group". These member helped alot!<br>
+
+<b>Special thanks</b>:<br>
++Lucas Benninger (English translation help)<br>
++Ergina Syrigou (Greek translation)<br>
++Roberto Darko (Italy translation)<br>
++Lucas Gagneten (Spanish)<br>
++Martin Evans (English translation + Spanish)<br>
++Thomas Le Pew (English translation help)
