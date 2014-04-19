@@ -14,7 +14,8 @@ Download & Install
 ========
 1. Download the NotifySC.java in the folder "Class".
 2. Drag and drop the class in your package in Eclipse/Android Studio where your main classes are (E.g. com.test.app)
-3. You are ready! Easy, isn't it?
+3. Open the NotifySC.java and write on top your packagename!
+4. You are ready! Easy, isn't it?
 
 
 Context Information
