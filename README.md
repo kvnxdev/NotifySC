@@ -37,6 +37,13 @@ Context Information
 <b>Fragment:</b> You should define "<i>Context myFragmentContext = container.getContext();</i>" in onCreateView
 
 
+Permission needed
+========
+```javascript
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+```
+
+
 Functions
 ========
 ```javascript
