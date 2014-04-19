@@ -194,7 +194,7 @@ public void onCreate(Bundle savedInstanceState)
 About
 ========
 <b>Usage</b><br>
-This code is owned and written by KvnX Dev. Feel free to take a look on the sourcecode, but dont steal or copy it. Instead use it as inspiration maybe?<br>
+This code is owned and written by KvnX Dev. Feel free to take a look on the sourcecode and work with it. Also use it as inspiration maybe.<br>
 
 <b>Links</b><br>
 My E-Mail: kvnx1337@googlemail.com<br>
