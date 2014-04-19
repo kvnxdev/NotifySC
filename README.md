@@ -10,6 +10,19 @@ What Is NotifySC?
 NotifySC is the best solution for users and developer to work with notifications in android. The user can easily control the notification access with NotifySC and can be sure that <b>no private data</b> will get in bad hands. <b>The developer just need 5 minutes</b> to get the first notification on his/her activity with only one java class. It is so easy to setup and to use.
 
 
+Why NotifySC?
+========
+<b>5 minutes and only a small code</b><br>
+If you are developer you know that a lot of code needs a lot of time. With NotifySC you just need 5 minutes to setup everything and to show the first notification on your activity. Isn't that awesome? Read below how it works!<br>
+
+<b>Be fair, use NotifySC</b><br>
+This service will show your app users that you are a fair person. The user can be sure that you dont want to get more than the notification content. <br>
+
+<b>Huge functionality</b><br>
+You can not only read notifications. You also can get information about the notifications. (Only on Android 4.3+)
+Also you can get your registration status or the status of NotifySC. (Running, Stopped, Registered.﻿, ..)
+
+
 Download & Install
 ========
 1. Download the NotifySC.java in the folder "Class".
