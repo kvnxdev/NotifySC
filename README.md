@@ -7,7 +7,7 @@ With NotifySC it is much easier to work with notifications in android. I attache
 
 What Is NotifySC?
 ========
-NotifySC is the best solution for users and developer to work with notifications in android. The user can easily control the notification access with NotifySC and can be sure that <b>no private data</b> will get in bad hands. <b>The developer just need 5 minutes</b> to get the first notification on his/her activity with only one java class. It is so easy to setup and to use.
+NotifySC is a clever solution for users and developer to work with notifications in android. The user can easily control the notification access with NotifySC and can be sure that <b>no private data</b> will get in bad hands. <b>The developer just need 5 minutes</b> to get the first notification on his/her activity with only one java class. It is so easy to setup and to use.
 
 
 Why NotifySC?
