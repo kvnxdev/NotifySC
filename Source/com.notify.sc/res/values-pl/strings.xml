@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">NotifySC</string>
+	<string name="action_devpage">KvnX Dev</string>
+	<string name="action_devsheet">Developer Sheet</string>
+	<string name="appreg_notification_1">Aplikacja </string>
+	<string name="appreg_notification_2"> została zarejestrowana!</string>
+	<string name="appunreg_notification_1">Rejestracja </string>
+	<string name="appunreg_notification_2"> została cofnięta!</string>
+	<string name="info_noregapps">Brak zarejestrowanych aplikacji!</string>
+	
+	<string name="tos_text"><![CDATA[Aplikacja ta jest najlepszym rozwiązaniem dla użytkowników i programistów do przetwarzania powiadomień.<br></br><br></br>Musisz pozwolić na to, że NotifySC będzie przekazywać treść powiadomień każdej zarejestrowanej aplikacji (w każdej chwili możesz cofnąć rejestrację!). <br></br><br></br>NotifySC <b>nie</b> będzie wysyłać, zapisywać ani rejestrować powiadomień.]]></string>
+	
+	<string name="dialog_accept">AKCEPTUJ</string>
+	<string name="dialog_cancel">ANULUJ</string>
+	<string name="dialog_yes">TAK</string>
+	<string name="dialog_no">NIE</string>
+	<string name="dialog_title_revoke">Cofnąć rejestrację?</string>
+	<string name="dialog_title_registrated">Zarejestrowane aplikacje</string>
+	
+	<string name="revoke_text">Czy chcesz cofnąć rejestrację wybranej aplikacji? \n\nUWAGA: Aplikacja nie będzie już mogła odczytywać powiadomień!</string>
+	
+	<string name="start_service">URUCHOM USŁUGĘ</string>
+	<string name="stop_service">ZATRZYMAJ USŁUGĘ</string>
+	<string name="started">Uruchomione</string>
+	<string name="stopped">Zatrzymane</string>
+	<string name="notificationlistener">Obserwowanie powiadomień</string>
+</resources>
