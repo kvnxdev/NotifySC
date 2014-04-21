@@ -233,7 +233,8 @@ To make this awesome service available I need to say thank you to the Google+ Co
 +Lucas Gagneten (Spanish translation)<br>
 +Martin Evans (English translation + Spanish)<br>
 +Thomas Le Pew (English translation help)<br>
-+Daniel Guta (Romanian translation)
++Daniel Guta (Romanian translation)<br>
++Łukasz Świątkowski (Polish translation)
 
 
 Privacy
