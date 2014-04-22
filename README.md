@@ -169,6 +169,10 @@ public class SCNnotificationReceiver extends BroadcastReceiver
       String incomeNotificationText = intent.getStringExtra("notificationTextSC"); 
       int incomeNotificationID = intent.getIntExtra("notificationIDSC",0); 
       
+      //NEW FOR 4.2.2+ user - Large notification-icon!
+      Bitmap incomeNotificationAppIcon = intent.getParcelableExtra("notificationAppIconLargeSC"); 
+      
+      
       if (incomeType.equals("added"))
       {
         //A NEW NOTIFICATION GOT ADDED (Now you can f.e. add a item to a ListView.)
