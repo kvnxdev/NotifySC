@@ -234,7 +234,9 @@ To make this awesome service available I need to say thank you to the Google+ Co
 +Martin Evans (English translation + Spanish)<br>
 +Thomas Le Pew (English translation help)<br>
 +Daniel Guta (Romanian translation)<br>
-+Łukasz Świątkowski (Polish translation)
++Łukasz Świątkowski (Polish translation)<br>
++Lucas Gagneten (Spanish tanslation correction)<br>
++Nick Seidel (German translation correction)
 
 
 Privacy
