@@ -236,8 +236,10 @@ int drawable bg_listview 0x7f020057
 int drawable bg_listviewhover 0x7f020058
 int drawable ic_launcher 0x7f020059
 int drawable ic_settings_icon 0x7f02005a
-int drawable list_item_overview_selector 0x7f02005b
-int drawable selectornoactionbar 0x7f02005c
+int drawable ic_statusbar 0x7f02005b
+int drawable ic_statusbar_d 0x7f02005c
+int drawable list_item_overview_selector 0x7f02005d
+int drawable selectornoactionbar 0x7f02005e
 int id action_bar 0x7f06001c
 int id action_bar_activity_content 0x7f060015
 int id action_bar_container 0x7f06001b

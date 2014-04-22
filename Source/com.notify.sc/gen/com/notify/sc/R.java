@@ -991,8 +991,10 @@ containing a value of this type.
         public static final int bg_listviewhover=0x7f020058;
         public static final int ic_launcher=0x7f020059;
         public static final int ic_settings_icon=0x7f02005a;
-        public static final int list_item_overview_selector=0x7f02005b;
-        public static final int selectornoactionbar=0x7f02005c;
+        public static final int ic_statusbar=0x7f02005b;
+        public static final int ic_statusbar_d=0x7f02005c;
+        public static final int list_item_overview_selector=0x7f02005d;
+        public static final int selectornoactionbar=0x7f02005e;
     }
     public static final class id {
         public static final int action_bar=0x7f06001c;

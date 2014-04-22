@@ -196,26 +196,29 @@ public class NotificationWatchdog extends NotificationListenerService {
     {
     	Intent intent = new Intent(this, StatusActivity.class);
     	PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, 0);
+    	int statusBarIcon = 0;
     	
     	String dialogText = "";
     	if (type==1)
     	{
+    		statusBarIcon = R.drawable.ic_statusbar;
     		dialogText = getResources().getString(R.string.appreg_notification_1) + " " +  VariousFunctions.getAppName(packagename, getBaseContext()) + " " +  getResources().getString(R.string.appreg_notification_2);
     	}
     	else
     	{
+    		statusBarIcon = R.drawable.ic_statusbar_d;
     		dialogText = getResources().getString(R.string.appunreg_notification_1) + " " +  VariousFunctions.getAppName(packagename, getBaseContext()) + " " +  getResources().getString(R.string.appunreg_notification_2);
     	}
     	
     	Notification n  = new Notification.Builder(this)
     	        .setContentTitle("NotifySC Information")
     	        .setContentText(dialogText)
-    	        .setSmallIcon(R.drawable.ic_launcher)
+    	        .setSmallIcon(statusBarIcon)
     	        .setContentIntent(pIntent)
     	        .setAutoCancel(true).build();
     	    
     	NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-    	notificationManager.notify(0, n); 
+    	notificationManager.notify(48203, n); 
     }
 
 }
