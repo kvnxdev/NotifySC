@@ -12,6 +12,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.os.Build;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
@@ -42,7 +43,7 @@ public class NotificationWatchdog extends NotificationListenerService {
 			    for (int i = 0; i < size; i++)
 			    {
 			        String packageIncome = separatedApps[i];
-			        sendNewNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome);
+			        sendNewNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon);
 			    }
 			}
 		}
@@ -63,14 +64,14 @@ public class NotificationWatchdog extends NotificationListenerService {
 			    for (int i = 0; i < size; i++)
 			    {
 			        String packageIncome = separatedApps[i];
-			        sendRemovedNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome);
+			        sendRemovedNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon);
 			    }
 			    
 			}
 		}
 	}
 	
-	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome)
+	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome, Bitmap largeIcon)
 	{
 		Intent intentSendNotification = new Intent();
 		intentSendNotification.setPackage(packageIncome);
@@ -80,11 +81,12 @@ public class NotificationWatchdog extends NotificationListenerService {
 		intentSendNotification.putExtra("notificationAppIconSC", appIcon);
 		intentSendNotification.putExtra("notificationTextSC", notificationText);
 		intentSendNotification.putExtra("notificationIDSC", notificationID);
+		intentSendNotification.putExtra("notificationAppIconLargeSC", largeIcon);
 		intentSendNotification.putExtra("notificationAppNameSC", VariousFunctions.getAppName(packageName, getBaseContext()));
 		sendBroadcast(intentSendNotification);
 	}
 	
-	public void sendRemovedNotification(String packageName, String notificationText, int notificationID, int appIcon, String packageIncome)
+	public void sendRemovedNotification(String packageName, String notificationText, int notificationID, int appIcon, String packageIncome, Bitmap largeIcon)
 	{
 		Intent intentSendNotification = new Intent();
 		intentSendNotification.setPackage(packageIncome);
@@ -94,6 +96,7 @@ public class NotificationWatchdog extends NotificationListenerService {
 		intentSendNotification.putExtra("notificationAppIconSC", appIcon);
 		intentSendNotification.putExtra("notificationTextSC", notificationText);
 		intentSendNotification.putExtra("notificationIDSC", notificationID);
+		intentSendNotification.putExtra("notificationAppIconLargeSC", largeIcon);
 		intentSendNotification.putExtra("notificationAppNameSC", VariousFunctions.getAppName(packageName, getBaseContext()));
 		sendBroadcast(intentSendNotification);
 	}

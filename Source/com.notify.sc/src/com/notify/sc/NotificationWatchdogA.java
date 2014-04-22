@@ -14,6 +14,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
  
@@ -39,7 +40,7 @@ public class NotificationWatchdogA extends AccessibilityService {
 			    for (int i = 0; i < size; i++)
 			    {
 			        String packageIncome = separatedApps[i];
-			        sendNewNotification(evt.getPackageName().toString(), TextAcitveNot, -1337, -1337, packageIncome);
+			        sendNewNotification(evt.getPackageName().toString(), TextAcitveNot, -1337, -1337, packageIncome, null);
 			    }
 			}
 		}
@@ -54,7 +55,7 @@ public class NotificationWatchdogA extends AccessibilityService {
     }
 				
 	
-	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome)
+	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome, Bitmap largeIcon)
 	{
 		Intent intentSendNotification = new Intent();
 		intentSendNotification.setPackage(packageIncome);
@@ -64,6 +65,7 @@ public class NotificationWatchdogA extends AccessibilityService {
 		intentSendNotification.putExtra("notificationAppIconSC", appIcon);
 		intentSendNotification.putExtra("notificationTextSC", notificationText);
 		intentSendNotification.putExtra("notificationIDSC", notificationID);
+		intentSendNotification.putExtra("notificationAppIconLargeSC", largeIcon);
 		intentSendNotification.putExtra("notificationAppNameSC", VariousFunctions.getAppName(packageName, getBaseContext()));
 		sendBroadcast(intentSendNotification);
 	}
