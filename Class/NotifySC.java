@@ -29,6 +29,25 @@ public class NotifySC {
 		context.sendBroadcast(intentRegNewApp);
 	}
 	
+	
+	public static void SCNotificationComDelNotification(String extraNotificationPackagename, String extraCurrentRegApp, Context context)
+	{
+		//This is the broadcast to remove notifications from Statusbar
+		Intent intentRegNewApp = new Intent();
+		intentRegNewApp.setAction("notificationComSC");
+		Bundle delExtras = new Bundle();
+		delExtras.putString("delnotificationfromSBpackage",extraNotificationPackagename);
+		delExtras.putString("delnotificationAppsender",extraCurrentRegApp);
+		intentRegNewApp.putExtras(delExtras);
+		context.sendBroadcast(intentRegNewApp);
+	}
+	
+	public static void SCDelNotification(Context context, String notificationPackageName)
+	{
+		//This will delete a specific notification from Statusbar
+		SCNotificationComDelNotification(notificationPackageName, context.getPackageName(), context);
+	}
+	
 	public static void SCRegApp(Context context)
 	{
 		//This will regist your app in NotifySC
