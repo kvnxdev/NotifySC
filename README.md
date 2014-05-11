@@ -74,6 +74,11 @@ NotifySC.SCUnRegApp(getBaseContext());
 NotifySC.SCShowDialog(getBaseContext());
 ```
 
+```javascript
+//***Delete a notification from statusbar:
+NotifySC.SCDelNotification(getBaseContext(), "packageNameToDelete");
+```
+
 &#42;&#42;&#42; = These functions are only working when the NotifySC service is running!
 
 
