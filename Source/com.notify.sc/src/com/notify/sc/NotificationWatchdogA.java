@@ -128,7 +128,7 @@ public class NotificationWatchdogA extends AccessibilityService {
 		        String unregApp = intent.getStringExtra("unregappnameSC");
 		        if (!unregApp.equals(""))
 		        {
-			        if (VariousFunctions.appInstalledOrNot(unregApp, getBaseContext()) && regApps.contains(unregApp))
+			        if (regApps.contains(unregApp))
 			        {
 			        	appRegNotification(unregApp,0);
 			        	regApps = regApps.replace(unregApp + ",","");
@@ -143,6 +143,23 @@ public class NotificationWatchdogA extends AccessibilityService {
 			        	{
 			        		
 			        	}
+			        }
+		        }
+    		}
+    		catch (Exception e)
+    		{
+    			
+    		}
+    		
+    		try
+    		{
+		        String delNotificationPackage = intent.getStringExtra("delnotificationfromSBpackage");
+		        String delNotificationAppsender = intent.getStringExtra("delnotificationAppsender");
+		        if (!delNotificationPackage.equals(""))
+		        {
+			        if (VariousFunctions.appInstalledOrNot(delNotificationAppsender, getBaseContext()) && regApps.contains(delNotificationAppsender))
+			        {
+			        	//This function is only available with the new WatchDogService (4.3+)
 			        }
 		        }
     		}

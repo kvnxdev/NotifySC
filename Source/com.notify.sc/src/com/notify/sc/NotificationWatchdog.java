@@ -16,6 +16,7 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
+import android.util.Log;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR2)
 @SuppressLint("NewApi")
@@ -158,7 +159,7 @@ public class NotificationWatchdog extends NotificationListenerService {
 		        String unregApp = intent.getStringExtra("unregappnameSC");
 		        if (!unregApp.equals(""))
 		        {
-			        if (VariousFunctions.appInstalledOrNot(unregApp, getBaseContext()) && regApps.contains(unregApp))
+			        if (regApps.contains(unregApp))
 			        {
 			        	appRegNotification(unregApp,0);
 			        	regApps = regApps.replace(unregApp + ",","");
@@ -171,6 +172,32 @@ public class NotificationWatchdog extends NotificationListenerService {
 			        	}
 			        	catch (Exception e)
 			        	{
+			        		
+			        	}
+			        }
+		        }
+    		}
+    		catch (Exception e)
+    		{
+    			
+    		}
+    		
+    		try
+    		{
+		        String delNotificationPackage = intent.getStringExtra("delnotificationfromSBpackage");
+		        String delNotificationAppsender = intent.getStringExtra("delnotificationAppsender");
+		        if (!delNotificationPackage.equals(""))
+		        {
+			        if (VariousFunctions.appInstalledOrNot(delNotificationAppsender, getBaseContext()) && regApps.contains(delNotificationAppsender))
+			        {
+	        			Log.w("NotifySC","Receive delNotification Broadcast -- pkg: " + delNotificationPackage + "-- sender: " + delNotificationAppsender);
+			        	for (StatusBarNotification nfication : NotificationWatchdog.this.getActiveNotifications())
+			        	{
+			        		if (delNotificationPackage.equals(nfication.getPackageName()))
+			        		{
+			        			NotificationWatchdog.this.cancelNotification(nfication.getPackageName(),nfication.getTag(),nfication.getId());
+			        			Log.w("NotifySC","Notification found, del it!");
+			        		}
 			        		
 			        	}
 			        }
