@@ -233,7 +233,7 @@ My Apps: https://play.google.com/store/apps/developer?id=KvnX+Dev<br>
 Link to App: https://play.google.com/store/apps/details?id=com.notify.sc<br>
 
 <b>Thanks</b><br>
-To make this awesome service available I need to say thank you to the Google+ Community "Knock²+ V3 // Beta Group". These member helped alot!<br>
+To make this awesome service available I need to say thank you to the Google+ Community "Attentive Lockscreen // Beta Group". These member helped alot!<br>
 
 <b>Special thanks</b>:<br>
 +Lucas Benninger (English translation help)<br>
