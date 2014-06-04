@@ -44,7 +44,7 @@ public class NotificationWatchdog extends NotificationListenerService {
 			    for (int i = 0; i < size; i++)
 			    {
 			        String packageIncome = separatedApps[i];
-			        sendNewNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon);
+			        sendNewNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon, sbn.isOngoing(), sbn.getNotification().contentIntent);
 			    }
 			}
 		}
@@ -65,14 +65,14 @@ public class NotificationWatchdog extends NotificationListenerService {
 			    for (int i = 0; i < size; i++)
 			    {
 			        String packageIncome = separatedApps[i];
-			        sendRemovedNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon);
+			        sendRemovedNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon, false, null);
 			    }
 			    
 			}
 		}
 	}
 	
-	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome, Bitmap largeIcon)
+	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome, Bitmap largeIcon, Boolean onGoing, PendingIntent intentToOpen)
 	{
 		Intent intentSendNotification = new Intent();
 		intentSendNotification.setPackage(packageIncome);
@@ -84,10 +84,12 @@ public class NotificationWatchdog extends NotificationListenerService {
 		intentSendNotification.putExtra("notificationIDSC", notificationID);
 		intentSendNotification.putExtra("notificationAppIconLargeSC", largeIcon);
 		intentSendNotification.putExtra("notificationAppNameSC", VariousFunctions.getAppName(packageName, getBaseContext()));
+		intentSendNotification.putExtra("notificationOnGoing", onGoing);
+		intentSendNotification.putExtra("notificationPendingToOpen", intentToOpen);
 		sendBroadcast(intentSendNotification);
 	}
 	
-	public void sendRemovedNotification(String packageName, String notificationText, int notificationID, int appIcon, String packageIncome, Bitmap largeIcon)
+	public void sendRemovedNotification(String packageName, String notificationText, int notificationID, int appIcon, String packageIncome, Bitmap largeIcon, Boolean onGoing, PendingIntent intentToOpen)
 	{
 		Intent intentSendNotification = new Intent();
 		intentSendNotification.setPackage(packageIncome);
@@ -99,6 +101,8 @@ public class NotificationWatchdog extends NotificationListenerService {
 		intentSendNotification.putExtra("notificationIDSC", notificationID);
 		intentSendNotification.putExtra("notificationAppIconLargeSC", largeIcon);
 		intentSendNotification.putExtra("notificationAppNameSC", VariousFunctions.getAppName(packageName, getBaseContext()));
+		intentSendNotification.putExtra("notificationOnGoing", onGoing);
+		intentSendNotification.putExtra("notificationPendingToOpen", intentToOpen);
 		sendBroadcast(intentSendNotification);
 	}
 	

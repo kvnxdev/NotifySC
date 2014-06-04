@@ -40,7 +40,7 @@ public class NotificationWatchdogA extends AccessibilityService {
 			    for (int i = 0; i < size; i++)
 			    {
 			        String packageIncome = separatedApps[i];
-			        sendNewNotification(evt.getPackageName().toString(), TextAcitveNot, -1337, -1337, packageIncome, null);
+			        sendNewNotification(evt.getPackageName().toString(), TextAcitveNot, -1337, -1337, packageIncome, null, false, null);
 			    }
 			}
 		}
@@ -55,7 +55,7 @@ public class NotificationWatchdogA extends AccessibilityService {
     }
 				
 	
-	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome, Bitmap largeIcon)
+	public void sendNewNotification(String packageName, String notificationText, int notificationID , int appIcon, String packageIncome, Bitmap largeIcon, Boolean onGoing, PendingIntent intentToOpen)
 	{
 		Intent intentSendNotification = new Intent();
 		intentSendNotification.setPackage(packageIncome);
@@ -67,6 +67,8 @@ public class NotificationWatchdogA extends AccessibilityService {
 		intentSendNotification.putExtra("notificationIDSC", notificationID);
 		intentSendNotification.putExtra("notificationAppIconLargeSC", largeIcon);
 		intentSendNotification.putExtra("notificationAppNameSC", VariousFunctions.getAppName(packageName, getBaseContext()));
+		intentSendNotification.putExtra("notificationOnGoing", onGoing);
+		intentSendNotification.putExtra("notificationPendingToOpen", intentToOpen);
 		sendBroadcast(intentSendNotification);
 	}
 	
