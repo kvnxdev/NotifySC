@@ -174,6 +174,10 @@ public class SCNnotificationReceiver extends BroadcastReceiver
       String incomeNotificationText = intent.getStringExtra("notificationTextSC"); 
       int incomeNotificationID = intent.getIntExtra("notificationIDSC",0); 
       
+      // Notification Data
+	    PendingIntent incomeNotificationPendingToOpen = intent.getParcelableExtra("notificationPendingToOpen");
+	    Boolean incomeNotificationOnGoing = intent.getBooleanExtra("notificationOnGoing", false); 
+	    
       //NEW FOR 4.2.2+ user - Large notification-icon!
       Bitmap incomeNotificationAppIcon = intent.getParcelableExtra("notificationAppIconLargeSC"); 
       
@@ -184,6 +188,7 @@ public class SCNnotificationReceiver extends BroadcastReceiver
         Log.v("com.notifySC.service","New notification from App " + incomeNotificationAppName + "(" + incomeAppPackageName + ")");
         Log.v("com.notifySC.service","Notification " + incomeNotificationText);
         Log.v("com.notifySC.service","Notification ID " + incomeNotificationID);
+        Log.v("com.notifySC.service","IsOnGoing " + incomeNotificationOnGoing);
       }
       else if (incomeType.equals("removed"))
       {
@@ -191,6 +196,7 @@ public class SCNnotificationReceiver extends BroadcastReceiver
         Log.v("com.notifySC.service","Removed notification from App " + incomeNotificationAppName + "(" + incomeAppPackageName + ")");
         Log.v("com.notifySC.service","Notification " + incomeNotificationText);
         Log.v("com.notifySC.service","Notification ID " + incomeNotificationID);
+        Log.v("com.notifySC.service","IsOnGoing " + incomeNotificationOnGoing);
       }
     }
     catch (Exception e)
