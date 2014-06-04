@@ -175,8 +175,8 @@ public class SCNnotificationReceiver extends BroadcastReceiver
       int incomeNotificationID = intent.getIntExtra("notificationIDSC",0); 
       
       // Notification Data
-	    PendingIntent incomeNotificationPendingToOpen = intent.getParcelableExtra("notificationPendingToOpen");
-	    Boolean incomeNotificationOnGoing = intent.getBooleanExtra("notificationOnGoing", false); 
+      PendingIntent incomeNotificationPendingToOpen = intent.getParcelableExtra("notificationPendingToOpen");
+      Boolean incomeNotificationOnGoing = intent.getBooleanExtra("notificationOnGoing", false); 
 	    
       //NEW FOR 4.2.2+ user - Large notification-icon!
       Bitmap incomeNotificationAppIcon = intent.getParcelableExtra("notificationAppIconLargeSC"); 
