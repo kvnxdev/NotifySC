@@ -25,4 +25,6 @@
     <string name="started">Started</string>
     <string name="stopped">Stopped</string>
     <string name="notificationlistener">Notification Listening </string>
+    
+    <string name="action_version">Version 1.0.12</string>
 </resources>

@@ -28,10 +28,9 @@ public class NotificationWatchdogA extends AccessibilityService {
 	public void onAccessibilityEvent(AccessibilityEvent evt) 
 	{   
 		separatedApps = regApps.split(",");
-		if (!regApps.contains(evt.getPackageName().toString()) && !evt.getPackageName().toString().contains("com.notify.sc"))
+		if (!evt.getPackageName().toString().contains("com.notify.sc"))
 		{
-			if (!getEventText(evt.getText()).equals("[]") && !getEventText(evt.getText()).equals(""))
-			{
+		
 				String TextAcitveNot;
 			    TextAcitveNot = "" + getEventText(evt.getText());
 			    TextAcitveNot = TextAcitveNot.replace('[',' ');
@@ -42,7 +41,7 @@ public class NotificationWatchdogA extends AccessibilityService {
 			        String packageIncome = separatedApps[i];
 			        sendNewNotification(evt.getPackageName().toString(), TextAcitveNot, -1337, -1337, packageIncome, null, false, null);
 			    }
-			}
+			
 		}
 	}
 

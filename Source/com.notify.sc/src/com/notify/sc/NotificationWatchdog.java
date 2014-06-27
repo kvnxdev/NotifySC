@@ -31,11 +31,9 @@ public class NotificationWatchdog extends NotificationListenerService {
 	{
 		regApps = NotifySCPrefs.getString("regApps", "");
 		separatedApps = regApps.split(",");
-		if (!regApps.contains(sbn.getPackageName().toString()) && !sbn.getPackageName().toString().contains("com.notify.sc"))
+		if (!sbn.getPackageName().toString().contains("com.notify.sc"))
 		{
-			if (!sbn.getNotification().tickerText.equals("[]") && !sbn.getNotification().tickerText.equals(""))
-			{
-				
+		
 				String TextAcitveNot;
 			    TextAcitveNot = "" + sbn.getNotification().tickerText.toString();
 			    TextAcitveNot = TextAcitveNot.replace('[',' ');
@@ -46,17 +44,16 @@ public class NotificationWatchdog extends NotificationListenerService {
 			        String packageIncome = separatedApps[i];
 			        sendNewNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon, sbn.isOngoing(), sbn.getNotification().contentIntent);
 			    }
-			}
+			
 		}
 	}
 	
 	@Override
 	public void onNotificationRemoved(StatusBarNotification sbn) {
 		regApps = NotifySCPrefs.getString("regApps", "");
-		if (!regApps.contains(sbn.getPackageName().toString()) && !sbn.getPackageName().toString().contains("com.notify.sc"))
+		if (!sbn.getPackageName().toString().contains("com.notify.sc"))
 		{
-			if (!sbn.getNotification().tickerText.equals("[]") && !sbn.getNotification().tickerText.equals(""))
-			{
+			
 				String TextAcitveNot;
 			    TextAcitveNot = "" + sbn.getNotification().tickerText.toString();
 			    TextAcitveNot = TextAcitveNot.replace('[',' ');
@@ -68,7 +65,7 @@ public class NotificationWatchdog extends NotificationListenerService {
 			        sendRemovedNotification(sbn.getPackageName().toString(), TextAcitveNot, sbn.getId(), sbn.getNotification().icon, packageIncome, sbn.getNotification().largeIcon, false, null);
 			    }
 			    
-			}
+			
 		}
 	}
 	

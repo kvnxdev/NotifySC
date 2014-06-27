@@ -10,7 +10,7 @@
     <string name="info_noregapps">Es wurden keine registrierten Apps gefunden!</string>
     
     <string name="tos_text"><![CDATA[Diese App ist für Nutzer und Entwickler die beste Lösung um mit Benachrichtigungen zu arbeiten.<br></br><br></br>Es muss akzeptiert werden, dass NotifySC an jede registrierte App Benachrichtigungs-Inhalte schicken darf. (Registrationen können jederzeit aufgehoben werden!). <br></br><br></br>NotifySC wird <b>keine</b> Benachrichtigungs-Daten hochladen, speichern oder loggen.]]></string>
-    
+     
     <string name="dialog_accept">AKZEPTIEREN</string>
     <string name="dialog_cancel">ABBRECHEN</string>
     <string name="dialog_yes">JA</string>

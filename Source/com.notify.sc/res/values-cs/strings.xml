@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 <string name="app_name">NotifySC</string>
+	 <string name="action_devpage">KvnX Dev</string>
+	 <string name="action_devsheet">Vývojářský list</string>
+	 <string name="appreg_notification_1">Aplikace </string>
+	 <string name="appreg_notification_2"> byla registrována!</string>
+	 <string name="appunreg_notification_1">Registrace</string>
+	 <string name="appunreg_notification_2"> byla zrušena!</string>
+	 <string name="info_noregapps"> Nebyly nalezeny žádné registrovaného aplikace!</string>
+	
+	 <string name="tos_text"><![CDATA[Tato aplikace je nejlepším řešením pro uživatele a vývojáře pracující s notifikacemi. <br></br><br></br>Povolením NotifySC umožníte získat notifikace ke každé registrované aplikaci. (Registraci můžete kdykoliv zrušit!). <br></br><br></br>NotifySC <b>nebude</b> odesílat nebo ukládat žádné notifikační data.]]></string>
+	
+	 <string name="dialog_accept">PŘÍJMOUT</string>
+	 <string name="dialog_cancel">ODMÍTNOUT</string>
+	 <string name="dialog_yes">ANO</string>
+	 <string name="dialog_no">NE</string>
+	 <string name="dialog_title_revoke">Chcete zrušit registraci?</string>
+	 <string name="dialog_title_registrated">Registrované aplikace</string>
+	
+	 <string name="revoke_text">Chcete zrušit registraci pro vybranou aplikaci? \n\nUPOZORNĚNÍ: Po potvrzení nebude vybraná aplikace zobrazovat oznámení.</string>
+	
+	 <string name="start_service">SPUSTIT SLUŽBU</string>
+	 <string name="stop_service">ZASTAVIT SLUŽBU</string>
+	 <string name="started">Start</string>
+	 <string name="stopped">Stop</string>
+	 <string name="notificationlistener">Seznam notifikací</string>
+</resources>

@@ -1101,11 +1101,12 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f060023;
         public static final int action_bar_title=0x7f060022;
         public static final int action_context_bar=0x7f06001d;
-        public static final int action_devpage=0x7f060046;
-        public static final int action_devsheet=0x7f060047;
+        public static final int action_devpage=0x7f060047;
+        public static final int action_devsheet=0x7f060046;
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
+        public static final int action_version=0x7f060048;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int always=0x7f06000b;
         public static final int beginning=0x7f060011;
@@ -1266,6 +1267,7 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with_application=0x7f0b000b;
         public static final int action_devpage=0x7f0b000e;
         public static final int action_devsheet=0x7f0b000f;
+        public static final int action_version=0x7f0b0022;
         public static final int app_name=0x7f0b000d;
         public static final int appreg_notification_1=0x7f0b0010;
         public static final int appreg_notification_2=0x7f0b0011;
